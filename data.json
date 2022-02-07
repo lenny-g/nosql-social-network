@@ -1,0 +1,65 @@
+[
+  {
+    "username": "Technologenius99",
+    "email": "linda@hello.com",
+    "thoughts": [
+      {
+        "thoughtText": "NoSQL is super easy",
+        "createdAt": "20th Mar 2021 14:00",
+        "username": "Technologenius",
+        "reactions": [
+          {
+            "reactionId": "123",
+            "reactionBody": "Yes I agree with you!!",
+            "username": "HangryCoder",
+            "createdAt": "20th Mar 2021 14:10"
+          },
+          {
+            "reactionId": "456",
+            "reactionBody": "Yup agree",
+            "username": "StarTechy007",
+            "createdAt": "20th Mar 2021 14:15"
+          },
+          {
+            "reactionId": "789",
+            "reactionBody": "I am struggling with NoSQL",
+            "username": "OldSkoolGhoul",
+            "createdAt": "20th Mar 2021 14:18"
+          }
+        ]
+      }
+    ],
+    "friends": [
+      {
+        "username": "tomsmith",
+        "email": "tomsmith@email.com",
+        "thoughts": []
+      },
+      {
+        "username": "jacksmith",
+        "email": "jacksmith@email.com",
+        "thoughts": [
+          {
+            "thoughtText": "MySQL is the best",
+            "createdAt": "18th Mar 2021 14:00",
+            "username": "jacksmith",
+            "reactions": [
+              {
+                "reactionId": "123",
+                "reactionBody": "Yes agree",
+                "username": "HangryCoder",
+                "createdAt": "19th Mar 2021 14:10"
+              },
+              {
+                "reactionId": "456",
+                "reactionBody": "Can't wait to start NoSQL",
+                "username": "StarTechy007",
+                "createdAt": "18th Mar 2021 14:15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
