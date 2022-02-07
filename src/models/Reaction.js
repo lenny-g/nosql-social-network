@@ -2,10 +2,6 @@ const { Schema } = require("mongoose");
 const moment = require("moment");
 
 const reactionSchema = {
-  _id: {
-    type: ID,
-  },
-
   reactionBody: {
     type: String,
     required: true,
