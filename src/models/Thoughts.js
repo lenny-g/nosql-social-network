@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+const moment = require("moment");
 
 const thoughtSchema = {
   thoughtText: {
@@ -10,7 +11,7 @@ const thoughtSchema = {
 
   createdAt: {
     type: Date,
-    default: Date.now,
+    default: moment(),
     required: true,
   },
 

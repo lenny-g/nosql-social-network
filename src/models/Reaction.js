@@ -1,4 +1,5 @@
-const { Schema, model } = require("mongoose");
+const { Schema } = require("mongoose");
+const moment = require("moment");
 
 const reactionSchema = {
   _id: {
@@ -17,12 +18,10 @@ const reactionSchema = {
   },
   createdAt: {
     type: Date,
-    default: Date.now,
+    default: moment(),
   },
 };
 
 const schema = new Schema(reactionSchema);
 
-const Reaction = model("reaction", schema);
-
-module.exports = Reaction;
+module.exports = schema;
