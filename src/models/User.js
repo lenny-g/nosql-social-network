@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+const thoughts = require("./Thought");
 
 const userSchema = {
   userName: {
@@ -15,7 +16,7 @@ const userSchema = {
     match: true,
   },
 
-  thoughts: [thought],
+  thoughts: [thoughts],
 };
 
 const schema = new Schema(userSchema);
