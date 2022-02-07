@@ -15,7 +15,7 @@ const userSchema = {
     match: true,
   },
 
-  thoughts: [thoughts],
+  thoughts: [thought],
 };
 
 const schema = new Schema(userSchema);

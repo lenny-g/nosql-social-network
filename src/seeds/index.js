@@ -1,49 +1,22 @@
-const users = [
-  {
-    username: "CmptrLvr1",
-    email: "bob@hello.com",
-  },
-  {
-    username: "StarTechy007",
-    email: "amanda@hello.com",
-  },
-  {
-    username: "Technologenius99",
-    email: "linda@hello.com",
-  },
-  {
-    username: "HangryCoder",
-    email: "jim@hello.com",
-  },
-  {
-    username: "OldSkoolGhoul",
-    email: "henry@hello.com",
-  },
-];
+const connection = require("../config/connection");
 
-const thoughts = [
-  {
-    thoughtText: "NoSQL is super easy",
-    username: "Technologenius99",
-    reactions: [
-      {
-        reactionId: "123",
-        reactionBody: "Yes I agree with you!!",
-        username: "HangryCoder",
-      },
-      {
-        reactionId: "456",
-        reactionBody: "Yup agree",
-        username: "StarTechy007",
-      },
-      {
-        reactionId: "789",
-        reactionBody: "I am struggling with NoSQL",
-        username: "OldSkoolGhoul",
-      },
-    ],
-  },
-];
+const userSeedData = require("./userSeedData.json");
+const ThoughtSeedData = require("./thoughtSeedData.json");
+
+const { User, Thought } = require("../models");
+
+const seedDatabase = async () => {
+  await connection.sync({ force: true });
+  console.log("\n----- DATABASE SYNCED -----\n");
+
+  const users = await User.bulkCreate(userSeedData);
+  console.log("\n----- USERS SEEDED-----\n");
+
+  const blogs = await Thought.bulkCreate(blogSeedData);
+  console.log("\n----- BLOGS SEEDED -----\n");
+
+  process.exit(0);
+};
 
 // Step 1 seed all users
 
