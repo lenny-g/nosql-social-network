@@ -1,6 +1,5 @@
 const { Schema, model } = require("mongoose");
 const thoughts = require("./Thought");
-
 const userSchema = {
   userName: {
     type: String,
@@ -16,7 +15,12 @@ const userSchema = {
     match: true,
   },
 
-  thoughts: [thoughts],
+  thoughts: [
+    {
+      type: Schema.Types.ObjectID,
+      ref: "Thought",
+    },
+  ],
 };
 
 const schema = new Schema(userSchema);
