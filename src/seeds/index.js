@@ -1,22 +1,11 @@
-const connection = require("../config/connection");
+const mongoose = require("mongoose");
 
 const userSeedData = require("./userSeedData.json");
-const ThoughtSeedData = require("./thoughtSeedData.json");
+const thoughtSeedData = require("./thoughtSeedData.json");
 
 const { User, Thought } = require("../models");
 
-const seedDatabase = async () => {
-  await connection.sync({ force: true });
-  console.log("\n----- DATABASE SYNCED -----\n");
-
-  const users = await User.bulkCreate(userSeedData);
-  console.log("\n----- USERS SEEDED-----\n");
-
-  const blogs = await Thought.bulkCreate(blogSeedData);
-  console.log("\n----- BLOGS SEEDED -----\n");
-
-  process.exit(0);
-};
+const seedDatabase = () => {};
 
 // Step 1 seed all users
 

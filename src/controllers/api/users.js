@@ -1,10 +1,10 @@
 const { User } = require("../../models");
 
-const getUsers = async (req, res) => {
+const getUsers = (req, res) => {
   res.send("getUsers");
 };
 
-const getUserById = async (req, res) => {
+const getUserById = (req, res) => {
   res.send("getUsersById");
 };
 

@@ -12,7 +12,7 @@ const userSchema = {
     type: String,
     unique: true,
     required: true,
-    match: true,
+    // validate email
   },
 
   thoughts: [
@@ -21,9 +21,20 @@ const userSchema = {
       ref: "Thought",
     },
   ],
+
+  friends: [
+    {
+      type: Schema.Types.ObjectID,
+      ref: "User",
+    },
+  ],
 };
 
 const schema = new Schema(userSchema);
+
+schema.virtual("friendCount").get(function () {
+  return this.friends.length;
+});
 
 const User = model("user", schema);
 

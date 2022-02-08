@@ -1,5 +1,5 @@
 const { Schema } = require("mongoose");
-const moment = require("moment");
+const { formatDate } = require("../utils");
 
 const reactionSchema = {
   reactionBody: {
@@ -14,7 +14,8 @@ const reactionSchema = {
   },
   createdAt: {
     type: Date,
-    default: moment(),
+    default: Date.now(),
+    get: formatDate,
   },
 };
 

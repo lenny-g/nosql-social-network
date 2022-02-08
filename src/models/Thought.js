@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const moment = require("moment");
+const { formatDate } = require("../utils");
 const reactions = require("./Reaction");
 
 const thoughtSchema = {
@@ -12,8 +12,9 @@ const thoughtSchema = {
 
   createdAt: {
     type: Date,
-    default: moment(),
+    default: Date.now(),
     required: true,
+    get: formatDate,
   },
 
   username: {
@@ -25,6 +26,6 @@ const thoughtSchema = {
 
 const schema = new Schema(thoughtSchema);
 
-const Thought = model("thought", schema);
+const Thought = model("Thought", schema);
 
 module.exports = Thought;

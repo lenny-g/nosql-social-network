@@ -1,10 +1,10 @@
 const { Thought } = require("../../models");
 
-const getThoughts = async (req, res) => {
+const getThoughts = (req, res) => {
   res.send("getThought");
 };
 
-const getThoughtById = async (req, res) => {
+const getThoughtById = (req, res) => {
   res.send("getThoughtsById");
 };
 
