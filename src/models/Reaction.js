@@ -2,6 +2,11 @@ const { Schema } = require("mongoose");
 const { formatDate } = require("../utils");
 
 const reactionSchema = {
+  
+  reactionID: {
+    
+  }
+
   reactionBody: {
     type: String,
     required: true,
