@@ -1,23 +1,45 @@
 const thoughtSeedData = [
   {
-    thoughtText: "NoSQL is super easy",
-    username: "bobsmith",
+    thoughtText: "What’s the best thing about Switzerland?",
+    username: "Kevin",
+    reactions: [
+      {
+        reactionBody: "I don’t know, but the flag is a big plus.",
+        username: "Gru",
+      },
+    ],
   },
   {
-    thoughtText: "I think MySQL is easy",
-    username: "jimsmith",
+    thoughtText: "I Invented a new word- Plagiarism.",
+    username: "Stuart",
+    reactions: [
+      {
+        reactionBody: "LOL you're so funny!",
+        username: "Kevin",
+      },
+      {
+        reactionBody: "Oh the irony",
+        username: "Gru",
+      },
+    ],
   },
   {
-    thoughtText: "CSS is super easy",
-    username: "jillsmith",
-  },
-  {
-    thoughtText: "HTML is super easy",
-    username: "Jamessmith",
-  },
-  {
-    thoughtText: "Node.js is super easy",
-    username: "JohnSmith",
+    thoughtText: "Did you hear about the claustrophobic astronaut?",
+    username: "Bob",
+    reactions: [
+      {
+        reactionBody: "Did he just needed a little space?",
+        username: "Stuart",
+      },
+      {
+        reactionBody: "Good one Stuart!",
+        username: "Kevin",
+      },
+      {
+        reactionBody: "Was he looking for a mars-bar?",
+        username: "Gru",
+      },
+    ],
   },
 ];
 

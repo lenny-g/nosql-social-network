@@ -1,11 +1,27 @@
 const userSeedData = [
   {
-    username: "jimsmith",
-    email: "jimsmith@email.com",
+    username: "Kevin",
+    email: "kevin@email.com",
+    thoughts: [],
+    friends: [],
   },
   {
-    username: "marksmith",
-    email: "marksmith@email.com",
+    username: "Stuart",
+    email: "stuart@email.com",
+    thoughts: [],
+    friends: [],
+  },
+  {
+    username: "Bob",
+    email: "bob@email.com",
+    thoughts: [],
+    friends: [],
+  },
+  {
+    username: "Gru",
+    email: "gru@email.com",
+    thoughts: [],
+    friends: [],
   },
 ];
 
