@@ -26,8 +26,6 @@ const deleteReactionById = async (req, res) => {
   try {
     const { reactionId, thoughtId } = req.params;
 
-    console.log(reactionId, thoughtId);
-
     const thought = await Thought.findByIdAndUpdate(thoughtId, {
       $pull: { reactions: { _id: reactionId } },
     });

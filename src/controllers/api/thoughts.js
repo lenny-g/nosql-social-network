@@ -30,7 +30,6 @@ const getThoughtById = async (req, res) => {
 const createThought = async (req, res) => {
   try {
     const { thoughtText, username } = req.body;
-    console.log(req.body);
     const thought = await Thought.create({ thoughtText, username });
     return res.json({ success: true, data: thought });
   } catch (error) {

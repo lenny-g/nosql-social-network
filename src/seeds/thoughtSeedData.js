@@ -1,43 +1,44 @@
 const thoughtSeedData = [
   {
-    thoughtText: "What’s the best thing about Switzerland?",
-    username: "Kevin",
+    thoughtText: "Where can I find a copy of the new Cats",
+    username: "Trevor",
     reactions: [
       {
-        reactionBody: "I don’t know, but the flag is a big plus.",
-        username: "Gru",
+        reactionBody: "In a dumpster fire maybe?",
+        username: "Stacy",
       },
     ],
   },
   {
-    thoughtText: "I Invented a new word- Plagiarism.",
-    username: "Stuart",
+    thoughtText: "Why did they make the Cats in Cats look like that",
+    username: "Jim",
     reactions: [
       {
-        reactionBody: "LOL you're so funny!",
-        username: "Kevin",
+        reactionBody:
+          "They started making a musical and ended up with horror film",
+        username: "SeanBean",
       },
       {
-        reactionBody: "Oh the irony",
-        username: "Gru",
+        reactionBody: "Scary stuff!",
+        username: "Carl",
       },
     ],
   },
   {
-    thoughtText: "Did you hear about the claustrophobic astronaut?",
-    username: "Bob",
+    thoughtText: "When did this become a Cats(2019) social media app",
+    username: "SeanBean",
     reactions: [
       {
-        reactionBody: "Did he just needed a little space?",
-        username: "Stuart",
+        reactionBody: "When I couldn't think of anything else to type!",
+        username: "Leanne",
       },
       {
-        reactionBody: "Good one Stuart!",
-        username: "Kevin",
+        reactionBody: "That's tough!",
+        username: "Trevor",
       },
       {
-        reactionBody: "Was he looking for a mars-bar?",
-        username: "Gru",
+        reactionBody: "Meow",
+        username: "Jim",
       },
     ],
   },

@@ -13,8 +13,8 @@ const getUsers = async (req, res) => {
 };
 const getUserById = async (req, res) => {
   try {
-    const { id } = req.params;
-    const user = await User.findById(id).populate("friends");
+    const { userId } = req.params;
+    const user = await User.findById(userId).populate("friends");
     return res.json({ success: true, data: user });
   } catch (error) {
     console.log(`[ERROR]: Failed to get user by ID | ${error.message}`);
@@ -26,7 +26,7 @@ const getUserById = async (req, res) => {
 const createUser = async (req, res) => {
   try {
     const { username, email } = req.body;
-    console.log(req.body);
+
     const user = await User.create({ username, email });
     return res.json({ success: true, data: user });
   } catch (error) {
@@ -38,10 +38,14 @@ const createUser = async (req, res) => {
 };
 const updateUserById = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { userId } = req.params;
     const body = req.body;
 
-    const user = await User.findByIdAndUpdate(id, { ...body }, { new: true });
+    const user = await User.findByIdAndUpdate(
+      userId,
+      { ...body },
+      { new: true }
+    );
 
     return res.json({ success: true, data: user });
   } catch (error) {
@@ -54,8 +58,8 @@ const updateUserById = async (req, res) => {
 
 const deleteUserById = async (req, res) => {
   try {
-    const { id } = req.params;
-    const user = await User.findByIdAndDelete(id);
+    const { userId } = req.params;
+    const user = await User.findByIdAndDelete(userId);
     return res.json({ success: true, data: user });
   } catch (error) {
     console.log(`[ERROR]: Failed to delete user from DB | ${error.message}`);
