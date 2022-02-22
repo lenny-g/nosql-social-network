@@ -16,4 +16,4 @@ Using Express.js for routing, MongoDB and Mongoose ODM.
 ## Usage
 
 This Section contains a video link showcasing the usage of this application:
-Click [here]() for a demonstration of the NoSQL Social Network project!
+Click [here](https://drive.google.com/file/d/1mjHftB-E9ahuOAxLLxQp919_siNeNw78/view?usp=sharing) for a demonstration of the NoSQL Social Network project!
