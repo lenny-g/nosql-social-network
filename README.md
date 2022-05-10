@@ -1,4 +1,4 @@
-# NoSQL: SOCIAL NETWORK API  ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]
+# NoSQL: SOCIAL NETWORK API  ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## TABLE OF CONTENTS 
 - [Description](#DESCRIPTION)
